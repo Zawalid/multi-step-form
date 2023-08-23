@@ -34,7 +34,7 @@ export function BackStepButton({ onBack }) {
   );
 }
 export default function App() {
-  const [currentStep, setCurrentStep] = useState(3);
+  const [currentStep, setCurrentStep] = useState(0);
   const StepComponent = stepsComponents[currentStep];
   const [period, setPeriod] = useState("monthly");
   const [plan, setPlan] = useState({
